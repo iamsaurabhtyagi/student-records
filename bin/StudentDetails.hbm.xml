@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.college.student.StudentDetails" table="student" >
+        <id name="rollNo" column="Roll_No">
+            <generator class="increment" />
+        </id>
+        <property name="studentName" column="Name"/>
+        <property name="fatherName" column="Father_Name"/>
+        <property name="motherName" column="Mother_Name" />
+        <property name="dob" column="DoB" />
+        <property name="department" column="Department" />
+        <property name="branch" column="Branch" />
+        <property name="year" column="Year" />
+        <property name="semester" column="Semester" />
+        <property name="localAddress" column="Local_Address" />
+        <property name="permanentAddress" column="Permanent_Address" />
+    </class>
+</hibernate-mapping>
